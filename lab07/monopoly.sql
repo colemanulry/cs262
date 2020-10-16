@@ -40,6 +40,7 @@ CREATE TABLE Cash (
 	);
 
 CREATE TABLE Property (
+	ID integer PRIMARY KEY,
 	playerID integer REFERENCES Player(ID),
 	numProperties integer
 	);
@@ -94,9 +95,9 @@ INSERT INTO Cash VALUES (1, 50.00);
 INSERT INTO Cash VALUES (2, 100.00);
 INSERT INTO Cash VALUES (3, 200.00);
 
-INSERT INTO Property VALUES (1,4);
-INSERT INTO Property VALUES (2,8);
-INSERT INTO Property VALUES (3,2);
+INSERT INTO Property VALUES (1, 1, 4);
+INSERT INTO Property VALUES (2, 2, 8);
+INSERT INTO Property VALUES (3, 3, 2);
 
 INSERT INTO House VALUES (1, 1, 3);
 INSERT INTO House VALUES (2, 2, 4);
