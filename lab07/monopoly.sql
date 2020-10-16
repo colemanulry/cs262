@@ -13,6 +13,7 @@ DROP TABLE IF EXISTS Cash;
 DROP TABLE IF EXISTS Property;
 DROP TABLE IF EXISTS House;
 DROP TABLE IF EXISTS Hotel;
+DROP TABLE IF EXISTS Locator;
 
 
 -- Create the schema.
@@ -34,29 +35,29 @@ CREATE TABLE PlayerGame (
 	);
 
 CREATE TABLE Cash (
-	playerID integer REFERENCES Player(ID)
+	playerID integer REFERENCES Player(ID),
 	cash integer
 	);
 
 CREATE TABLE Property (
-	playerID integer REFERENCES Player(ID)
+	playerID integer REFERENCES Player(ID),
 	numProperties integer
 	);
 
 CREATE TABLE House (
-	playerID integer REFERENCES Player(ID)
-	propertyID integer REFERENCES Property(ID)
+	playerID integer REFERENCES Player(ID),
+	propertyID integer REFERENCES Property(ID),
 	numHouses integer
 	);
 
 CREATE TABLE Hotel (
-	playerID integer REFERENCES Player(ID)
-	propertyID integer REFERENCES Property(ID)
+	playerID integer REFERENCES Player(ID),
+	propertyID integer REFERENCES Property(ID),
 	numHotels integer
 	);
 
 CREATE TABLE Locator (
-	playerID integer REFERENCES Player(ID)
+	playerID integer REFERENCES Player(ID),
 	numSpotsFromStart integer
 )
 
@@ -68,6 +69,7 @@ GRANT SELECT ON Cash TO PUBLIC;
 GRANT SELECT ON Property TO PUBLIC;
 GRANT SELECT ON House TO PUBLIC;
 GRANT SELECT ON Hotel TO PUBLIC;
+GRANT SELECT ON Locator TO PUBLIC;
 
 
 -- Add sample records.
@@ -90,15 +92,20 @@ INSERT INTO PlayerGame VALUES (3, 3, 5500.00);
 
 INSERT INTO Cash VALUES (1, 50.00);
 INSERT INTO Cash VALUES (2, 100.00);
+INSERT INTO Cash VALUES (3, 200.00);
 
 INSERT INTO Property VALUES (1,4);
 INSERT INTO Property VALUES (2,8);
+INSERT INTO Property VALUES (3,2);
 
 INSERT INTO House VALUES (1, 1, 3);
 INSERT INTO House VALUES (2, 2, 4);
+INSERT INTO House VALUES (3, 3, 6);
 
-INSERT INTO Hotel VALUES (1,1);
-INSERT INTO Hotel VALUES (2,2);
+INSERT INTO Hotel VALUES (1, 1, 4);
+INSERT INTO Hotel VALUES (2, 2, 3);
+INSERT INTO Hotel VALUES (3, 3, 1);
 
 INSERT INTO Locator VALUE (1, 4);
 INSERT INTO Locator VALUE (2, 7);
+INSERT INTO Locator VALUE (3, 2);
