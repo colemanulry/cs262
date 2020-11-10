@@ -22,12 +22,12 @@ of your service repo. See the instructions for how to do this under the
 &ldquo;Deploy&rdquo; tab in your Heroku application&rsquo;s dashboard.
 
 A) Active URLs include:
-https://powerful-crag-01102.herokuapp.com/
-https://powerful-crag-01102.herokuapp.com/players/1
-https://powerful-crag-01102.herokuapp.com/players/2
-https://powerful-crag-01102.herokuapp.com/players/3
-https://powerful-crag-01102.herokuapp.com/players/4
-https://powerful-crag-01102.herokuapp.com/playersGame (Join Table)
+- https://powerful-crag-01102.herokuapp.com/
+- https://powerful-crag-01102.herokuapp.com/players/1
+- https://powerful-crag-01102.herokuapp.com/players/2
+- https://powerful-crag-01102.herokuapp.com/players/3
+- https://powerful-crag-01102.herokuapp.com/players/4
+- https://powerful-crag-01102.herokuapp.com/playersGame (Join Table)
  
 B) I believe they are all nullipotent.
 
