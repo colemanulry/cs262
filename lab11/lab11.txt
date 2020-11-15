@@ -1,0 +1,11 @@
+Coleman Ulry
+Lab 11 - static analysis
+
+Modules I Checked: 
+home.js and deskieNavigation.js of Client Repo 
+
+Changes that I made: 
+Deleted a line of code that simply said "serio" on line 49. Looked to be an accidental typo by someone who pushed their code and the reviewers did not catch it. Additionally, it suggested that I delete line 17, which is an import statement of a module that we were using at one point, but no longer. So, I decided to delete this line since we were not utilizing it. 
+
+Changes that I didn't make: 
+Got several suggestions to change words that vs code did not recognize, such as "deskie" or "emailEntry", but I decided to keep these because this is vocabulary that our team is aware and comfortable using. Furthermore, it didn't recognize "Nunito", our font. 
